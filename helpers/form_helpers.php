@@ -1,19 +1,19 @@
 <?php
 
-if(!function_exists("web_lover_form_main_div")){
-	function web_lover_form_main_div(){
+if(!function_exists("spacs_form_main_div")){
+	function spacs_form_main_div(){
 		return '<div class="float_left containers top-20">';
 	}
 }
 
-if(!function_exists("web_lover_form_main_div_end")){
-	function web_lover_form_main_div_end(){
+if(!function_exists("spacs_form_main_div_end")){
+	function spacs_form_main_div_end(){
 		return '</div>';
 	}
 }
 
-if(!function_exists("web_lover_form_heading")){
-	function web_lover_form_heading($html_tag = false, $heading = ''){
+if(!function_exists("spacs_form_heading")){
+	function spacs_form_heading($html_tag = false, $heading = ''){
 		$use_heading = '';
 
 		esc_html( $html_tag );
@@ -25,8 +25,8 @@ if(!function_exists("web_lover_form_heading")){
 	}
 }
 
-if( !function_exists("web_lover_form_open") ){
-	function web_lover_form_open($action='', $method='POST', $enctype='false', $id='', $class='contact', $new_window = false)
+if( !function_exists("spacs_form_open") ){
+	function spacs_form_open($action='', $method='POST', $enctype='false', $id='', $class='contact', $new_window = false)
 	{
 		if( $enctype ){
 			$enctype = "multipart/form-data";
@@ -40,16 +40,16 @@ if( !function_exists("web_lover_form_open") ){
 	}
 }
 
-if( !function_exists("web_lover_form_close") ){
+if( !function_exists("spacs_form_close") ){
 
-	function web_lover_form_close(){
+	function spacs_form_close(){
 		return "</from>\n";
 	}
 
 }
 
-if( !function_exists("web_lover_form_submit") ){
-	function web_lover_form_submit($name, $cls='')
+if( !function_exists("spacs_form_submit") ){
+	function spacs_form_submit($name, $cls='')
 	{
 		$use_class = "btn btn_color submit_btn ";
 		if( $cls ){
@@ -63,8 +63,8 @@ if( !function_exists("web_lover_form_submit") ){
 	}
 }
 
-if( !function_exists("web_lover_form_file") ){
-	function web_lover_form_file($name, $is_required = '', $is_label_name = '')
+if( !function_exists("spacs_form_file") ){
+	function spacs_form_file($name, $is_required = '', $is_label_name = '')
 	{
 		# we will store the html here
 		$input = '';
@@ -91,8 +91,8 @@ if( !function_exists("web_lover_form_file") ){
 	}
 }
 
-if( !function_exists("web_lover_form_input") ){
-	function web_lover_form_input($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
+if( !function_exists("spacs_form_input") ){
+	function spacs_form_input($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
 	{
 	    # we will store the html here
 	    $input = '';
@@ -128,8 +128,8 @@ if( !function_exists("web_lover_form_input") ){
 	}
 }
 
-if( !function_exists("web_lover_form_input_email") ){
-	function web_lover_form_input_email($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
+if( !function_exists("spacs_form_input_email") ){
+	function spacs_form_input_email($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
 	{
 	    # we will store the html here
 	    $input = '';
@@ -165,8 +165,8 @@ if( !function_exists("web_lover_form_input_email") ){
 	}
 }
 
-if( !function_exists( "web_lover_form_input_number" ) ){
-	function web_lover_form_input_number($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
+if( !function_exists( "spacs_form_input_number" ) ){
+	function spacs_form_input_number($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
 	{
 	    # we will store the html here
 	    $input = '';
@@ -203,9 +203,9 @@ if( !function_exists( "web_lover_form_input_number" ) ){
 }
 
 
-if( !function_exists("web_lover_form_date_range") ){
+if( !function_exists("spacs_form_date_range") ){
 
-	function web_lover_form_date_range($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
+	function spacs_form_date_range($name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '')
 	{
 
 	    # we will store the html here
@@ -246,8 +246,8 @@ if( !function_exists("web_lover_form_date_range") ){
 }
 
 
-if( !function_exists("web_lover_form_textarea") ){
-	function web_lover_form_textarea( $name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '' )
+if( !function_exists("spacs_form_textarea") ){
+	function spacs_form_textarea( $name, $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '' )
 	{
 	    # we will store the html here
 	    $input = '';
@@ -289,9 +289,9 @@ if( !function_exists("web_lover_form_textarea") ){
 }
 
 
-if( !function_exists("web_lover_form_option") ){
+if( !function_exists("spacs_form_option") ){
 
-	function web_lover_form_option( $name, $options = array(), $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '' ){
+	function spacs_form_option( $name, $options = array(), $value = '', $is_required = '', $is_label_name = '', $is_place_holder = '' ){
 
 	    # we will store the html here
 	    $input = '<div>';
@@ -333,8 +333,8 @@ if( !function_exists("web_lover_form_option") ){
 
 }
 
-if( !function_exists("web_lover_form_radio") ){
-	function web_lover_form_radio($name, $value = '', $is_required = '', $is_label_name = '')
+if( !function_exists("spacs_form_radio") ){
+	function spacs_form_radio($name, $value = '', $is_required = '', $is_label_name = '')
 	{
 
 	    # we will store the html here
@@ -362,8 +362,8 @@ if( !function_exists("web_lover_form_radio") ){
 	}
 }
 
-if( !function_exists("web_lover_form_checkbox") ){
-	function web_lover_form_checkbox($name, $value = '', $is_required = '', $is_label_name = '')
+if( !function_exists("spacs_form_checkbox") ){
+	function spacs_form_checkbox($name, $value = '', $is_required = '', $is_label_name = '')
 	{
 	    # we will store the html here
 	    $input = '';

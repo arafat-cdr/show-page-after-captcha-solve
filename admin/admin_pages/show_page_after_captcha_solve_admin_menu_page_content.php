@@ -63,17 +63,17 @@ $spacs_protected_page_slug = esc_html( get_option( 'spacs_protected_page_slug' )
 
 <div class="form" style="clear: both; float: left; max-width:  30%;">
 	<?php
-		echo web_lover_form_main_div();
-		echo web_lover_form_open();
-		echo web_lover_form_heading( 'h3', __( 'Show page after captcha', SPACS_RECAPTCHA_TD ) );
+		echo spacs_form_main_div();
+		echo spacs_form_open();
+		echo spacs_form_heading( 'h3', __( 'Show page after captcha', SPACS_RECAPTCHA_TD ) );
 		wp_nonce_field(SPACS_CAPTCHA_NONCE_VERIFY, SPACS_CAPTCHA_NONCE);
 
-		echo web_lover_form_input("captcha_public_key", $spacs_captcha_public_key, true);
-		echo web_lover_form_input("captcha_private_key", $spacs_captcha_private_key, true);
-		echo web_lover_form_input("protected_page_slug", $spacs_protected_page_slug, true);
+		echo spacs_form_input("captcha_public_key", esc_html( $spacs_captcha_public_key ), true);
+		echo spacs_form_input("captcha_private_key", esc_html( $spacs_captcha_private_key ), true);
+		echo spacs_form_input("protected_page_slug", esc_html( $spacs_protected_page_slug ), true);
 
-		echo web_lover_form_submit('Save');
-		echo web_lover_form_close();
-		echo web_lover_form_main_div_end();
+		echo spacs_form_submit('Save');
+		echo spacs_form_close();
+		echo spacs_form_main_div_end();
 	?>
 </div>
