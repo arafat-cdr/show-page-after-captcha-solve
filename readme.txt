@@ -3,7 +3,7 @@ Contributors: arafatcdr
 Donate link: https://www.buymeacoffee.com/arafat.cdr
 Tags: show page aftet captcha solve,captcha, recaptcha, protected by captcha, wp page cpatcha
 Requires at least: 4.7
-Tested up to:  6.0
+Tested up to: 6.1.1
 Stable tag: 1.0
 Requires PHP: 5.6
 License: GPLv2 or later
